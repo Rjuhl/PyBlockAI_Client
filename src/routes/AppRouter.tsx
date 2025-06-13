@@ -1,4 +1,5 @@
 import Home from "@page/home"
+import MyAppBar from "@component/MyAppBar"
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
 
 
@@ -6,6 +7,7 @@ export default function AppRouter() {
      const Layout = () => {
         return (
             <>
+            <MyAppBar />
             <Outlet />
             </>
         )
